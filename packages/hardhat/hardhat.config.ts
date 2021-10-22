@@ -57,13 +57,6 @@ module.exports = {
     },
     hardhat: {
       initialBaseFeePerGas: 0,
-      forking:
-        process.env.FORKING_ENABLED == "true"
-          ? {
-              url: process.env.RPC_URL,
-              blockNumber: parseInt(process.env.FORKING_BLOCK_NUMBER),
-            }
-          : undefined,
     },
     rinkeby: {
       url: process.env.RPC_URL,

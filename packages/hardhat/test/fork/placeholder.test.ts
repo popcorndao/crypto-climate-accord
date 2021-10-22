@@ -8,7 +8,7 @@ describe("placeholder", () => {
         {
           forking: {
             jsonRpcUrl: process.env.RPC_URL,
-            blockNumber: "12724811",
+            blockNumber: 12724811,
           },
         },
       ],
