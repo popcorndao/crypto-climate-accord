@@ -4,7 +4,7 @@ import {
   Proposal,
   ProposalStatus,
   ProposalType,
-} from '@popcorn/contracts/adapters';
+} from '@popcorn/hardhat/adapters';
 import { IpfsClient } from '@popcorn/utils';
 import CardGridHeader from 'components/CardGridHeader';
 import Navbar from 'components/NavBar/NavBar';

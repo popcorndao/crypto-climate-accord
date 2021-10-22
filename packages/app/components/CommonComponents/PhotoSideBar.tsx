@@ -1,4 +1,4 @@
-import { BeneficiaryApplication } from '@popcorn/contracts/adapters';
+import { BeneficiaryApplication } from '@popcorn/hardhat/adapters';
 
 export interface PhotoSideBarProps {
   beneficiary: BeneficiaryApplication;

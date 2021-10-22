@@ -4,7 +4,7 @@ import {
   Proposal,
   ProposalStatus,
   ProposalType,
-} from '@popcorn/contracts/adapters';
+} from '@popcorn/hardhat/adapters';
 import { IpfsClient } from '@popcorn/utils';
 import { useWeb3React } from '@web3-react/core';
 import BeneficiaryInformation from 'components/CommonComponents/BeneficiaryInformation';

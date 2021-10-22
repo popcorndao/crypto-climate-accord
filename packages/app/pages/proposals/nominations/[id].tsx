@@ -1,4 +1,4 @@
-import { ProposalType } from '@popcorn/contracts/adapters';
+import { ProposalType } from '@popcorn/hardhat/adapters';
 import ProposalPage from 'components/Proposals/ProposalPage';
 
 export default function SingleTakedownPage(): JSX.Element {

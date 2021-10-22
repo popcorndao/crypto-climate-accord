@@ -1,14 +1,11 @@
-import { BeneficiaryApplication } from '@popcorn/contracts/adapters';
+import { BeneficiaryApplication } from '@popcorn/hardhat/adapters';
 
 export interface ImageHeaderProps {
   beneficiary: BeneficiaryApplication;
   title?: string;
 }
 
-const ImageHeader: React.FC<ImageHeaderProps> = ({
-  beneficiary,
-  title,
-}) => {
+const ImageHeader: React.FC<ImageHeaderProps> = ({ beneficiary, title }) => {
   return (
     <div>
       <div>

@@ -1,4 +1,4 @@
-import { Proposal } from '@popcorn/contracts/adapters';
+import { Proposal } from '@popcorn/hardhat/adapters';
 
 export interface VotingProps {
   proposal: Proposal;

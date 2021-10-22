@@ -1,4 +1,4 @@
-import { ElectionMetadata } from '@popcorn/contracts/adapters';
+import { ElectionMetadata } from '@popcorn/hardhat/adapters';
 import { useRouter } from 'next/router';
 import React from 'react';
 

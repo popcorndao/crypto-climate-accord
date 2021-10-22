@@ -1,4 +1,4 @@
-import { BeneficiaryImage } from '@popcorn/contracts/adapters';
+import { BeneficiaryImage } from '@popcorn/hardhat/adapters';
 import React from 'react';
 
 // TODO: Figure out the types here

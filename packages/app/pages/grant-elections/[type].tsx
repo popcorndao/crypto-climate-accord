@@ -3,7 +3,7 @@ import {
   ElectionTerm,
   ElectionTermIntToName,
   GrantElectionAdapter,
-} from '@popcorn/contracts/adapters';
+} from '@popcorn/hardhat/adapters';
 import { capitalize } from '@popcorn/utils';
 import { useWeb3React } from '@web3-react/core';
 import ElectionSection from 'components/GrantElections/ElectionSection';

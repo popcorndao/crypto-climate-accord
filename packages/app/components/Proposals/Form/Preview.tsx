@@ -1,5 +1,5 @@
 import { Web3Provider } from '@ethersproject/providers';
-import { BeneficiaryApplication } from '@popcorn/contracts/adapters';
+import { BeneficiaryApplication } from '@popcorn/hardhat/adapters';
 import {
   formatAndRoundBigNumber,
   getBytes32FromIpfsHash,

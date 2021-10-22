@@ -1,4 +1,4 @@
-import { BeneficiaryApplication } from '@popcorn/contracts/adapters';
+import { BeneficiaryApplication } from '@popcorn/hardhat/adapters';
 import CardBody from 'components/CommonComponents/CardBody';
 import Link from 'next/link';
 

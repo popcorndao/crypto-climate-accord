@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber';
 import { parseEther } from '@ethersproject/units';
-import { Proposal } from '@popcorn/contracts/adapters';
+import { Proposal } from '@popcorn/hardhat/adapters';
 import { bigNumberToNumber, formatAndRoundBigNumber } from '@popcorn/utils';
 import Divider from 'components/CommonComponents/Divider';
 import ProgressBar from 'components/ProgressBar';

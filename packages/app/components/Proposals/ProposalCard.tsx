@@ -1,4 +1,4 @@
-import { Proposal, ProposalType } from '@popcorn/contracts/adapters';
+import { Proposal, ProposalType } from '@popcorn/hardhat/adapters';
 import CardBody from 'components/CommonComponents/CardBody';
 import Link from 'next/link';
 import VotingInformation from './Voting/VotingInformation';
