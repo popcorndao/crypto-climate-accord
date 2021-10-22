@@ -1,3 +1,4 @@
+import { expect } from "chai";
 import { network } from "hardhat";
 
 describe("placeholder", () => {
@@ -16,6 +17,6 @@ describe("placeholder", () => {
   });
 
   it("should pass", () => {
-    expect(true).toBe(true);
+    expect(true).to.eq(true);
   });
 });
