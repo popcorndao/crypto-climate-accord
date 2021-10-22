@@ -15,5 +15,7 @@ describe("placeholder", () => {
     });
   });
 
-  it.skip("should pass", () => {});
+  it("should pass", () => {
+    expect(true).toBe(true);
+  });
 });
