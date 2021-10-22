@@ -1,4 +1,4 @@
-import { Proposal } from '@popcorn/hardhat/adapters';
+import { Proposal } from '@popcorn/hardhat/lib/adapters';
 import { DateTime } from 'luxon';
 import { useEffect, useState } from 'react';
 

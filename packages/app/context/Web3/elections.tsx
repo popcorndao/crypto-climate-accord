@@ -1,7 +1,7 @@
 import {
   ElectionMetadata,
   GrantElectionAdapter,
-} from '@popcorn/hardhat/adapters';
+} from '@popcorn/hardhat/lib/adapters';
 import { GrantElections } from '@popcorn/hardhat/typechain';
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { ContractsContext } from './contracts';

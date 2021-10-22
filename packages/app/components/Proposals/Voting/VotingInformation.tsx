@@ -1,4 +1,4 @@
-import { Proposal, ProposalStatus } from '@popcorn/hardhat/adapters';
+import { Proposal, ProposalStatus } from '@popcorn/hardhat/lib/adapters';
 import { formatAndRoundBigNumber } from '@popcorn/utils';
 
 interface VotingRowProps {

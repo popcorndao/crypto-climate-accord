@@ -2,7 +2,7 @@ import {
   BeneficiaryApplication,
   BeneficiaryRegistryAdapter,
   ElectionMetadata,
-} from '@popcorn/hardhat/adapters';
+} from '@popcorn/hardhat/lib/adapters';
 import { IpfsClient } from '@popcorn/utils';
 import { ContractsContext } from 'context/Web3/contracts';
 import { BigNumber, utils } from 'ethers';

@@ -1,4 +1,4 @@
-import { BeneficiaryApplication } from '@popcorn/hardhat/adapters';
+import { BeneficiaryApplication } from '@popcorn/hardhat/lib/adapters';
 import CardGridHeader from 'components/CardGridHeader';
 import Navbar from 'components/NavBar/NavBar';
 import { useState } from 'react';

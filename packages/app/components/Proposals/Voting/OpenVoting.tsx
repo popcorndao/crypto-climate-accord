@@ -1,5 +1,5 @@
 import { RadioGroup } from '@headlessui/react';
-import { ProposalType } from '@popcorn/hardhat/adapters';
+import { ProposalType } from '@popcorn/hardhat/lib/adapters';
 import { VoteOptions } from '@popcorn/hardhat/lib/BeneficiaryGovernance/constants';
 import { useWeb3React } from '@web3-react/core';
 import { setDualActionModal } from 'context/actions';

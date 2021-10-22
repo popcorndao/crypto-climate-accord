@@ -1,4 +1,4 @@
-import { BeneficiaryImage } from '@popcorn/hardhat/adapters';
+import { BeneficiaryImage } from '@popcorn/hardhat/lib/adapters';
 import React from 'react';
 
 // TODO: Figure out the types here

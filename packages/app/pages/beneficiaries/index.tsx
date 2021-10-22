@@ -1,7 +1,7 @@
 import {
   BeneficiaryApplication,
   BeneficiaryRegistryAdapter,
-} from '@popcorn/hardhat/adapters';
+} from '@popcorn/hardhat/lib/adapters';
 import { IpfsClient } from '@popcorn/utils';
 import BeneficiaryGrid from 'components/Beneficiaries/BeneficiaryGrid';
 import { useContext, useEffect, useState } from 'react';

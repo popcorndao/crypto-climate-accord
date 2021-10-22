@@ -1,4 +1,4 @@
-import { BeneficiaryApplication } from '@popcorn/hardhat/adapters';
+import { BeneficiaryApplication } from '@popcorn/hardhat/lib/adapters';
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import { useState } from 'react';
@@ -83,11 +83,11 @@ const VoteSlider: React.FC<VoteSliderProps> = ({
             railStyle={{ backgroundColor: '#93C5FD', height: '4px' }}
             trackStyle={{ backgroundColor: '#3B82F6', height: '4px' }}
             /* handleStyle={{
-            border: '#F29F05',
-            backgroundColor: '#fff',
-            height: '14px',
-            width: '14px',
-          }} */
+          border: '#F29F05',
+          backgroundColor: '#fff',
+          height: '14px',
+          width: '14px',
+        }} */
           />
         </div>
       )}

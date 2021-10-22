@@ -1,7 +1,7 @@
 import {
   BeneficiaryApplication,
   GrantElectionAdapter,
-} from '@popcorn/hardhat/adapters';
+} from '@popcorn/hardhat/lib/adapters';
 import Link from 'next/link';
 import { ElectionProps } from './ElectionProps';
 import GrantFunded from './GrantFunded';

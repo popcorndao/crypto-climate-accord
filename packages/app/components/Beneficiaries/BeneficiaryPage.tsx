@@ -1,6 +1,6 @@
 // Displays a beneficiary or a preview of a proposal
 
-import { BeneficiaryApplication } from '@popcorn/hardhat/adapters';
+import { BeneficiaryApplication } from '@popcorn/hardhat/lib/adapters';
 import BeneficiaryInformation from 'components/CommonComponents/BeneficiaryInformation';
 import ImageHeader from 'components/CommonComponents/ImageHeader';
 import VideoSideBar from 'components/CommonComponents/VideoSideBar';

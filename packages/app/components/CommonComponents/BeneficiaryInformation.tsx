@@ -1,5 +1,5 @@
 import { PaperClipIcon } from '@heroicons/react/solid';
-import { BeneficiaryApplication } from '@popcorn/hardhat/adapters';
+import { BeneficiaryApplication } from '@popcorn/hardhat/lib/adapters';
 import SocialMedia from '../CommonComponents/SocialMedia';
 
 export interface BeneficiaryInformationProps {

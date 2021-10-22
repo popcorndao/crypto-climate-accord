@@ -1,4 +1,4 @@
-import { ElectionMetadata } from '@popcorn/hardhat/adapters';
+import { ElectionMetadata } from '@popcorn/hardhat/lib/adapters';
 import {
   IGrantRoundFilter,
   PendingVotes,

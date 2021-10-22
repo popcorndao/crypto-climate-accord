@@ -1,7 +1,7 @@
 import {
   BeneficiaryApplication,
   BeneficiaryRegistryAdapter,
-} from '@popcorn/hardhat/adapters';
+} from '@popcorn/hardhat/lib/adapters';
 import { IpfsClient } from '@popcorn/utils';
 import BeneficiaryPage from 'components/Beneficiaries/BeneficiaryPage';
 import Loading from 'components/CommonComponents/Loading';

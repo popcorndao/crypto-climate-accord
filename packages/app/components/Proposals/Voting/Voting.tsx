@@ -1,4 +1,4 @@
-import { ProposalStatus } from '@popcorn/hardhat/adapters';
+import { ProposalStatus } from '@popcorn/hardhat/lib/adapters';
 import React from 'react';
 import CurrentStandings from '../CurrentStandings';
 import ChallengePeriodVoting from './ChallengePeriodVoting';
