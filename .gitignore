@@ -14,9 +14,9 @@ yarn-error.log
 !.openzeppelin/goerli*.json
 !.openzeppelin/rinkeby*.json
 !.openzeppelin/mainnet*.json
-packages/contracts/artifacts
-packages/contracts/artifacts-ovm
-packages/contracts/cache
-packages/contracts/cache-ovm
-packages/contracts/typechain
+packages/hardhat/artifacts
+packages/hardhat/artifacts-ovm
+packages/hardhat/cache
+packages/hardhat/cache-ovm
+packages/hardhat/typechain
 **/.DS_Store
