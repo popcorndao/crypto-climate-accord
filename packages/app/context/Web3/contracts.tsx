@@ -20,7 +20,7 @@ import {
   Staking__factory,
   UniswapV2Router02,
   UniswapV2Router02__factory,
-} from '../../../contracts/typechain';
+} from '../../../hardhat/typechain';
 import { setSingleActionModal } from '../actions';
 import { store } from '../store';
 import { connectors, networkMap } from './connectors';

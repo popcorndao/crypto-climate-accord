@@ -27,12 +27,12 @@ jobs:
       - name: Install dependency
         run: sudo apt-get install graphviz && npm i lerna -g && yarn install
       - name: Run docify
-        run: lerna run --scope @popcorn/contracts docify
+        run: lerna run --scope @popcorn/hardhat docify
       - name: deploy
         uses: s0/git-publish-subdir-action@develop
         env:
           REPO: self
           BRANCH: develop-docgen
-          FOLDER: packages/contracts/docgen/
+          FOLDER: packages/hardhat/docgen/
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MESSAGE: "Build: ({sha}) {msg}" # The commit message

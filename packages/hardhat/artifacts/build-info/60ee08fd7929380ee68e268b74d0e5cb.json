@@ -1,0 +1,874 @@
+{
+  "id": "60ee08fd7929380ee68e268b74d0e5cb",
+  "_format": "hh-sol-build-info-1",
+  "solcVersion": "0.7.3",
+  "solcLongVersion": "0.7.3+commit.9bfce1f6",
+  "input": {
+    "language": "Solidity",
+    "sources": {
+      "contracts/core/interfaces/IHysiBatchInteraction.sol": {
+        "content": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.7.0 <0.8.0;\npragma experimental ABIEncoderV2;\n\nenum BatchType {\n  Mint,\n  Redeem\n}\n\nstruct Batch {\n  BatchType batchType;\n  bytes32 batchId;\n  bool claimable;\n  uint256 unclaimedShares;\n  uint256 suppliedTokenBalance;\n  uint256 claimableTokenBalance;\n  address suppliedTokenAddress;\n  address claimableTokenAddress;\n}\n\ninterface IHysiBatchInteraction {\n  function batches(bytes32 batchId) external view returns (Batch memory);\n\n  function depositForMint(uint256 amount_, address account_) external;\n\n  function claim(bytes32 batchId_, address account_) external returns (uint256);\n\n  function withdrawFromBatch(\n    bytes32 batchId_,\n    uint256 amountToWithdraw_,\n    address account_\n  ) external;\n}\n"
+      }
+    },
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 1000
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  "output": {
+    "contracts": {
+      "contracts/core/interfaces/IHysiBatchInteraction.sol": {
+        "IHysiBatchInteraction": {
+          "abi": [
+            {
+              "inputs": [
+                {
+                  "internalType": "bytes32",
+                  "name": "batchId",
+                  "type": "bytes32"
+                }
+              ],
+              "name": "batches",
+              "outputs": [
+                {
+                  "components": [
+                    {
+                      "internalType": "enum BatchType",
+                      "name": "batchType",
+                      "type": "uint8"
+                    },
+                    {
+                      "internalType": "bytes32",
+                      "name": "batchId",
+                      "type": "bytes32"
+                    },
+                    {
+                      "internalType": "bool",
+                      "name": "claimable",
+                      "type": "bool"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "unclaimedShares",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "suppliedTokenBalance",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "claimableTokenBalance",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "address",
+                      "name": "suppliedTokenAddress",
+                      "type": "address"
+                    },
+                    {
+                      "internalType": "address",
+                      "name": "claimableTokenAddress",
+                      "type": "address"
+                    }
+                  ],
+                  "internalType": "struct Batch",
+                  "name": "",
+                  "type": "tuple"
+                }
+              ],
+              "stateMutability": "view",
+              "type": "function"
+            },
+            {
+              "inputs": [
+                {
+                  "internalType": "bytes32",
+                  "name": "batchId_",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "address",
+                  "name": "account_",
+                  "type": "address"
+                }
+              ],
+              "name": "claim",
+              "outputs": [
+                {
+                  "internalType": "uint256",
+                  "name": "",
+                  "type": "uint256"
+                }
+              ],
+              "stateMutability": "nonpayable",
+              "type": "function"
+            },
+            {
+              "inputs": [
+                {
+                  "internalType": "uint256",
+                  "name": "amount_",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "address",
+                  "name": "account_",
+                  "type": "address"
+                }
+              ],
+              "name": "depositForMint",
+              "outputs": [],
+              "stateMutability": "nonpayable",
+              "type": "function"
+            },
+            {
+              "inputs": [
+                {
+                  "internalType": "bytes32",
+                  "name": "batchId_",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amountToWithdraw_",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "address",
+                  "name": "account_",
+                  "type": "address"
+                }
+              ],
+              "name": "withdrawFromBatch",
+              "outputs": [],
+              "stateMutability": "nonpayable",
+              "type": "function"
+            }
+          ],
+          "evm": {
+            "bytecode": {
+              "generatedSources": [],
+              "linkReferences": {},
+              "object": "",
+              "opcodes": "",
+              "sourceMap": ""
+            },
+            "deployedBytecode": {
+              "generatedSources": [],
+              "immutableReferences": {},
+              "linkReferences": {},
+              "object": "",
+              "opcodes": "",
+              "sourceMap": ""
+            },
+            "methodIdentifiers": {
+              "batches(bytes32)": "c81e25ab",
+              "claim(bytes32,address)": "96c144f0",
+              "depositForMint(uint256,address)": "961b7d86",
+              "withdrawFromBatch(bytes32,uint256,address)": "3af3bfb5"
+            }
+          }
+        }
+      }
+    },
+    "sources": {
+      "contracts/core/interfaces/IHysiBatchInteraction.sol": {
+        "ast": {
+          "absolutePath": "contracts/core/interfaces/IHysiBatchInteraction.sol",
+          "exportedSymbols": {
+            "Batch": [
+              22
+            ],
+            "BatchType": [
+              5
+            ],
+            "IHysiBatchInteraction": [
+              55
+            ]
+          },
+          "id": 56,
+          "license": "MIT",
+          "nodeType": "SourceUnit",
+          "nodes": [
+            {
+              "id": 1,
+              "literals": [
+                "solidity",
+                ">=",
+                "0.7",
+                ".0",
+                "<",
+                "0.8",
+                ".0"
+              ],
+              "nodeType": "PragmaDirective",
+              "src": "33:31:0"
+            },
+            {
+              "id": 2,
+              "literals": [
+                "experimental",
+                "ABIEncoderV2"
+              ],
+              "nodeType": "PragmaDirective",
+              "src": "65:33:0"
+            },
+            {
+              "canonicalName": "BatchType",
+              "id": 5,
+              "members": [
+                {
+                  "id": 3,
+                  "name": "Mint",
+                  "nodeType": "EnumValue",
+                  "src": "119:4:0"
+                },
+                {
+                  "id": 4,
+                  "name": "Redeem",
+                  "nodeType": "EnumValue",
+                  "src": "127:6:0"
+                }
+              ],
+              "name": "BatchType",
+              "nodeType": "EnumDefinition",
+              "src": "100:35:0"
+            },
+            {
+              "canonicalName": "Batch",
+              "id": 22,
+              "members": [
+                {
+                  "constant": false,
+                  "id": 7,
+                  "mutability": "mutable",
+                  "name": "batchType",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 22,
+                  "src": "154:19:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_BatchType_$5",
+                    "typeString": "enum BatchType"
+                  },
+                  "typeName": {
+                    "id": 6,
+                    "name": "BatchType",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 5,
+                    "src": "154:9:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_BatchType_$5",
+                      "typeString": "enum BatchType"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9,
+                  "mutability": "mutable",
+                  "name": "batchId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 22,
+                  "src": "177:15:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 8,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "177:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11,
+                  "mutability": "mutable",
+                  "name": "claimable",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 22,
+                  "src": "196:14:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 10,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "196:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 13,
+                  "mutability": "mutable",
+                  "name": "unclaimedShares",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 22,
+                  "src": "214:23:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "214:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15,
+                  "mutability": "mutable",
+                  "name": "suppliedTokenBalance",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 22,
+                  "src": "241:28:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 14,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "241:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 17,
+                  "mutability": "mutable",
+                  "name": "claimableTokenBalance",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 22,
+                  "src": "273:29:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 16,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "273:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19,
+                  "mutability": "mutable",
+                  "name": "suppliedTokenAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 22,
+                  "src": "306:28:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 18,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "306:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 21,
+                  "mutability": "mutable",
+                  "name": "claimableTokenAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 22,
+                  "src": "338:29:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "338:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "name": "Batch",
+              "nodeType": "StructDefinition",
+              "scope": 56,
+              "src": "137:233:0",
+              "visibility": "public"
+            },
+            {
+              "abstract": false,
+              "baseContracts": [],
+              "contractDependencies": [],
+              "contractKind": "interface",
+              "fullyImplemented": false,
+              "id": 55,
+              "linearizedBaseContracts": [
+                55
+              ],
+              "name": "IHysiBatchInteraction",
+              "nodeType": "ContractDefinition",
+              "nodes": [
+                {
+                  "functionSelector": "c81e25ab",
+                  "id": 29,
+                  "implemented": false,
+                  "kind": "function",
+                  "modifiers": [],
+                  "name": "batches",
+                  "nodeType": "FunctionDefinition",
+                  "parameters": {
+                    "id": 25,
+                    "nodeType": "ParameterList",
+                    "parameters": [
+                      {
+                        "constant": false,
+                        "id": 24,
+                        "mutability": "mutable",
+                        "name": "batchId",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 29,
+                        "src": "425:15:0",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        "typeName": {
+                          "id": 23,
+                          "name": "bytes32",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "425:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "visibility": "internal"
+                      }
+                    ],
+                    "src": "424:17:0"
+                  },
+                  "returnParameters": {
+                    "id": 28,
+                    "nodeType": "ParameterList",
+                    "parameters": [
+                      {
+                        "constant": false,
+                        "id": 27,
+                        "mutability": "mutable",
+                        "name": "",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 29,
+                        "src": "465:12:0",
+                        "stateVariable": false,
+                        "storageLocation": "memory",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Batch_$22_memory_ptr",
+                          "typeString": "struct Batch"
+                        },
+                        "typeName": {
+                          "id": 26,
+                          "name": "Batch",
+                          "nodeType": "UserDefinedTypeName",
+                          "referencedDeclaration": 22,
+                          "src": "465:5:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Batch_$22_storage_ptr",
+                            "typeString": "struct Batch"
+                          }
+                        },
+                        "visibility": "internal"
+                      }
+                    ],
+                    "src": "464:14:0"
+                  },
+                  "scope": 55,
+                  "src": "408:71:0",
+                  "stateMutability": "view",
+                  "virtual": false,
+                  "visibility": "external"
+                },
+                {
+                  "functionSelector": "961b7d86",
+                  "id": 36,
+                  "implemented": false,
+                  "kind": "function",
+                  "modifiers": [],
+                  "name": "depositForMint",
+                  "nodeType": "FunctionDefinition",
+                  "parameters": {
+                    "id": 34,
+                    "nodeType": "ParameterList",
+                    "parameters": [
+                      {
+                        "constant": false,
+                        "id": 31,
+                        "mutability": "mutable",
+                        "name": "amount_",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 36,
+                        "src": "507:15:0",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "typeName": {
+                          "id": 30,
+                          "name": "uint256",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "507:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "visibility": "internal"
+                      },
+                      {
+                        "constant": false,
+                        "id": 33,
+                        "mutability": "mutable",
+                        "name": "account_",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 36,
+                        "src": "524:16:0",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "typeName": {
+                          "id": 32,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "524:7:0",
+                          "stateMutability": "nonpayable",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "visibility": "internal"
+                      }
+                    ],
+                    "src": "506:35:0"
+                  },
+                  "returnParameters": {
+                    "id": 35,
+                    "nodeType": "ParameterList",
+                    "parameters": [],
+                    "src": "550:0:0"
+                  },
+                  "scope": 55,
+                  "src": "483:68:0",
+                  "stateMutability": "nonpayable",
+                  "virtual": false,
+                  "visibility": "external"
+                },
+                {
+                  "functionSelector": "96c144f0",
+                  "id": 45,
+                  "implemented": false,
+                  "kind": "function",
+                  "modifiers": [],
+                  "name": "claim",
+                  "nodeType": "FunctionDefinition",
+                  "parameters": {
+                    "id": 41,
+                    "nodeType": "ParameterList",
+                    "parameters": [
+                      {
+                        "constant": false,
+                        "id": 38,
+                        "mutability": "mutable",
+                        "name": "batchId_",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 45,
+                        "src": "570:16:0",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        "typeName": {
+                          "id": 37,
+                          "name": "bytes32",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "570:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "visibility": "internal"
+                      },
+                      {
+                        "constant": false,
+                        "id": 40,
+                        "mutability": "mutable",
+                        "name": "account_",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 45,
+                        "src": "588:16:0",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "typeName": {
+                          "id": 39,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "588:7:0",
+                          "stateMutability": "nonpayable",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "visibility": "internal"
+                      }
+                    ],
+                    "src": "569:36:0"
+                  },
+                  "returnParameters": {
+                    "id": 44,
+                    "nodeType": "ParameterList",
+                    "parameters": [
+                      {
+                        "constant": false,
+                        "id": 43,
+                        "mutability": "mutable",
+                        "name": "",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 45,
+                        "src": "624:7:0",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "typeName": {
+                          "id": 42,
+                          "name": "uint256",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "624:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "visibility": "internal"
+                      }
+                    ],
+                    "src": "623:9:0"
+                  },
+                  "scope": 55,
+                  "src": "555:78:0",
+                  "stateMutability": "nonpayable",
+                  "virtual": false,
+                  "visibility": "external"
+                },
+                {
+                  "functionSelector": "3af3bfb5",
+                  "id": 54,
+                  "implemented": false,
+                  "kind": "function",
+                  "modifiers": [],
+                  "name": "withdrawFromBatch",
+                  "nodeType": "FunctionDefinition",
+                  "parameters": {
+                    "id": 52,
+                    "nodeType": "ParameterList",
+                    "parameters": [
+                      {
+                        "constant": false,
+                        "id": 47,
+                        "mutability": "mutable",
+                        "name": "batchId_",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 54,
+                        "src": "669:16:0",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        "typeName": {
+                          "id": 46,
+                          "name": "bytes32",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "669:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "visibility": "internal"
+                      },
+                      {
+                        "constant": false,
+                        "id": 49,
+                        "mutability": "mutable",
+                        "name": "amountToWithdraw_",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 54,
+                        "src": "691:25:0",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "typeName": {
+                          "id": 48,
+                          "name": "uint256",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "691:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "visibility": "internal"
+                      },
+                      {
+                        "constant": false,
+                        "id": 51,
+                        "mutability": "mutable",
+                        "name": "account_",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 54,
+                        "src": "722:16:0",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "typeName": {
+                          "id": 50,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "722:7:0",
+                          "stateMutability": "nonpayable",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "visibility": "internal"
+                      }
+                    ],
+                    "src": "663:79:0"
+                  },
+                  "returnParameters": {
+                    "id": 53,
+                    "nodeType": "ParameterList",
+                    "parameters": [],
+                    "src": "751:0:0"
+                  },
+                  "scope": 55,
+                  "src": "637:115:0",
+                  "stateMutability": "nonpayable",
+                  "virtual": false,
+                  "visibility": "external"
+                }
+              ],
+              "scope": 56,
+              "src": "372:382:0"
+            }
+          ],
+          "src": "33:722:0"
+        },
+        "id": 0
+      }
+    }
+  }
+}
