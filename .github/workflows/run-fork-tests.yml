@@ -38,4 +38,4 @@ jobs:
           cmd: test:fork
         env:
           FORKING_ENABLED: true
-          FORKING_RPC_URL: ${{secrets.RPC_URL}}
+          RPC_URL: ${{secrets.RPC_URL}}
