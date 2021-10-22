@@ -5,36 +5,11 @@ import {
   UserRejectedRequestError as UserRejectedRequestErrorInjected,
 } from '@web3-react/injected-connector';
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import {
-  BeneficiaryGovernance,
-  BeneficiaryGovernance__factory,
-  BeneficiaryRegistry,
-  BeneficiaryRegistry__factory,
-  ERC20,
-  ERC20__factory,
-  GrantElections,
-  GrantElections__factory,
-  RewardsManager,
-  RewardsManager__factory,
-  Staking,
-  Staking__factory,
-  UniswapV2Router02,
-  UniswapV2Router02__factory,
-} from '../../../hardhat/typechain';
 import { setSingleActionModal } from '../actions';
 import { store } from '../store';
 import { connectors, networkMap } from './connectors';
 
-export interface Contracts {
-  staking: Staking;
-  beneficiary: BeneficiaryRegistry;
-  election: GrantElections;
-  pop: ERC20;
-  rewardsManager: RewardsManager;
-  uniswap: UniswapV2Router02;
-  threeCrv: ERC20;
-  beneficiaryGovernance: BeneficiaryGovernance;
-}
+export interface Contracts {}
 
 interface ContractsContext {
   contracts: Contracts;
@@ -106,31 +81,7 @@ export default function ContractsWrapper({
     if (!library) {
       return;
     }
-    setContracts({
-      staking: Staking__factory.connect(process.env.ADDR_STAKING, library),
-      beneficiary: BeneficiaryRegistry__factory.connect(
-        process.env.ADDR_BENEFICIARY_REGISTRY,
-        library,
-      ),
-      election: GrantElections__factory.connect(
-        process.env.ADDR_GRANT_ELECTION,
-        library,
-      ),
-      pop: ERC20__factory.connect(process.env.ADDR_POP, library),
-      rewardsManager: RewardsManager__factory.connect(
-        process.env.ADDR_REWARDS_MANAGER,
-        library,
-      ),
-      uniswap: UniswapV2Router02__factory.connect(
-        process.env.ADDR_UNISWAP_ROUTER,
-        library,
-      ),
-      threeCrv: ERC20__factory.connect(process.env.ADDR_3CRV, library),
-      beneficiaryGovernance: BeneficiaryGovernance__factory.connect(
-        process.env.ADDR_BENEFICIARY_GOVERNANCE,
-        library,
-      ),
-    });
+    setContracts({});
   }, [library, active]);
 
   return (
