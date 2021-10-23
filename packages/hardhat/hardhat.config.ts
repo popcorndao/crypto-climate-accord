@@ -3,7 +3,9 @@ import "@nomiclabs/hardhat-waffle";
 import "@popcorn/utils/src/envLoader";
 import "@typechain/hardhat";
 import "hardhat-contract-sizer";
+import "hardhat-deploy";
 import "hardhat-gas-reporter";
+import "hardhat-secure-signer";
 import { task } from "hardhat/config";
 
 task("accounts", "Prints the list of accounts", async (args, hre) => {
