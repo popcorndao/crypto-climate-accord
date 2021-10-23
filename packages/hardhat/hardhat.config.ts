@@ -8,7 +8,6 @@ import { task } from "hardhat/config";
 
 task("accounts", "Prints the list of accounts", async (args, hre) => {
   const accounts = await hre.ethers.getSigners();
-
   for (const account of accounts) {
     console.log(account.address);
   }
@@ -53,13 +52,27 @@ module.exports = {
   networks: {
     mainnet: {
       chainId: 1,
-      url: process.env.RPC_URL,
+      url:
+        process.env.RPC_URL ||
+        `https://mainnet.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
     },
     hardhat: {
       initialBaseFeePerGas: 0,
     },
     rinkeby: {
-      url: process.env.RPC_URL,
+      url:
+        process.env.RPC_URL ||
+        `https://rinkeby.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
+    },
+    kovan: {
+      url:
+        process.env.RPC_URL ||
+        `https://kovan.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
+    },
+    gorli: {
+      url:
+        process.env.RPC_URL ||
+        `https://gorli.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
     },
   },
   gasReporter: {
