@@ -30,7 +30,7 @@
 ```
 packages
 ├── app            [@popcorn/app]          [next.js]
-├── contracts      [@popcorn/contracts]    [solidity contracts]
+├── hardhat        [@popcorn/hardhat]      [solidity contracts & typechain]
 ├── scripts        [@popcorn/scripts]      [deploy scripts, etc]
 ├── utils          [@popcorn/utils]        [generic utils]
 ├── ui             [@popcorn/ui]           [ui components + storybook]
@@ -121,7 +121,7 @@ Deploy from `packages/contracts`:
 | `yarn hardhat dev:deploy`                              | deploy contracts for development |
 | `yarn hardhat elections:refreshElectionState --term 1 --network localhost` | refresh election state           |
 | `yarn hardhat elections:getElectionMetadata --term 1 --network localhost`  | get metadata for election term   |
-| `yarn lerna run --scope @popcorn/contracts docify` | generate documentation for contracts (found in packages/contracts/docgen/docs)|
+| `yarn lerna run --scope @popcorn/hardhat docify` | generate documentation for contracts (found in packages/contracts/docgen/docs)|
 
 ## Contributing
 

@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 12.x, 16.x]
+        node-version: [14.x, 16.x, 12.x]
       fail-fast: false
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
@@ -38,4 +38,4 @@ jobs:
           cmd: test:fork
         env:
           FORKING_ENABLED: true
-          FORKING_RPC_URL: ${{secrets.FORKING_RPC_URL}}
+          RPC_URL: ${{secrets.RPC_URL}}
