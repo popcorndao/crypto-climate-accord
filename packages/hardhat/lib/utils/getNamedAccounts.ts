@@ -2,6 +2,10 @@
 
 export default function getNamedAccounts() {
   return {
+    POP: {
+      mainnet: "0xd0cd466b34a24fcb2f87676278af2005ca8a78c4",
+      rinkeby: "0x39a1610cccca2c7b59ffbebfdf970a65c84b26ae",
+    },
     DAO: {
       mainnet: "0xbD94fc22E6910d118187c8300667c66eD560A29B",
       rinkeby: "0x7D9B21704B5311bB480f0109dFD5D84ed1207e11",
