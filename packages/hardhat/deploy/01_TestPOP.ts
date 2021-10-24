@@ -3,7 +3,6 @@ import { formatEther } from "ethers/lib/utils";
 import { DeployFunction } from "hardhat-deploy/types";
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 import { getSignerFrom } from "../lib/utils/getSignerFrom";
-import { MockERC20__factory } from "../typechain/factories/MockERC20__factory";
 
 const main: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   const { deployments, getNamedAccounts } = hre;
@@ -24,11 +23,23 @@ const main: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     hre
   );
 
-  await mintPOP((await deployments.get("TestPOP")).address, signer, deployer);
+  await mintPOP(
+    (
+      await deployments.get("TestPOP")
+    ).address,
+    signer,
+    deployer,
+    hre
+  );
 };
 
-const mintPOP = async (address: string, signer: any, recipient: string) => {
-  const POP = MockERC20__factory.connect(address, signer);
+const mintPOP = async (
+  address: string,
+  signer: any,
+  recipient: string,
+  hre: HardhatRuntimeEnvironment
+) => {
+  const POP = await hre.ethers.getContractAt("MockERC20", address, signer);
   console.log("Minting POP for", recipient);
   await (await POP.mint(recipient, parseEther("1000000000"))).wait(1);
   console.log("Total POP supply", formatEther(await POP.totalSupply()));
