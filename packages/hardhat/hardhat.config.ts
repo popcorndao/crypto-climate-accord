@@ -1,4 +1,5 @@
 import "@float-capital/solidity-coverage";
+import "@nomiclabs/hardhat-ethers";
 import "@nomiclabs/hardhat-waffle";
 import "@popcorn/utils/src/envLoader";
 import "@typechain/hardhat";
