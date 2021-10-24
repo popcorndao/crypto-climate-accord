@@ -7,6 +7,7 @@ import "hardhat-deploy";
 import "hardhat-gas-reporter";
 import "hardhat-secure-signer";
 import { task } from "hardhat/config";
+import "./lib/tasks";
 
 task("accounts", "Prints the list of accounts", async (args, hre) => {
   const accounts = await hre.ethers.getSigners();
@@ -65,11 +66,13 @@ module.exports = {
       url:
         process.env.RPC_URL ||
         `https://rinkeby.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
+      tags: ["rinkeby"],
     },
     kovan: {
       url:
         process.env.RPC_URL ||
         `https://kovan.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
+      tags: ["LBP"],
     },
     gorli: {
       url:
