@@ -7503,13 +7503,13 @@ bignumber.js@^9.0.0, bignumber.js@^9.0.1:
   resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-9.0.1.tgz#8d7ba124c882bfd8e43260c67475518d0689e4e5"
   integrity sha512-IdZR9mh6ahOBv/hYGiXyVuyCetmGJhtYkqLBpTStdhEGjegpPlUawydyaF3pbIOFynJTpllEs+NP+CS9jKFLjA==
 
+"bignumber.js@git+https://github.com/debris/bignumber.js#master":
+  version "2.0.7"
+  resolved "git+https://github.com/debris/bignumber.js#c7a38de919ed75e6fb6ba38051986e294b328df9"
+
 "bignumber.js@git+https://github.com/debris/bignumber.js.git#94d7146671b9719e00a09c29b01a691bc85048c2":
   version "2.0.7"
   resolved "git+https://github.com/debris/bignumber.js.git#94d7146671b9719e00a09c29b01a691bc85048c2"
-
-"bignumber.js@git+https://github.com/debris/bignumber.js.git#master":
-  version "2.0.7"
-  resolved "git+https://github.com/debris/bignumber.js.git#c7a38de919ed75e6fb6ba38051986e294b328df9"
 
 "bignumber.js@git+https://github.com/frozeman/bignumber.js-nolookahead.git":
   version "2.0.7"
@@ -13108,13 +13108,12 @@ hardhat-gas-reporter@^1.0.4:
     eth-gas-reporter "^0.2.20"
     sha1 "^1.1.1"
 
-hardhat-secure-signer@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/hardhat-secure-signer/-/hardhat-secure-signer-0.0.6.tgz#330d95a85361c0c59ba065c35a6037ad4253de8e"
-  integrity sha512-G/9x1oexHmrMV59WkUTO+1y8KOdi5BYCra06qEj4QJS9cmGeZAKDwV1EUu72OuPbl3+t2t/xTWD01eo9pRezWw==
+hardhat-secure-signer@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/hardhat-secure-signer/-/hardhat-secure-signer-0.0.8.tgz#93eebe2dce166be48617746db56b2e3b43c35f97"
+  integrity sha512-62OMjh1wTwdjOWRToEMVvuyX0Uk1zBMGVOadWZFbpeBGIa5rYqFyXPP4sdtI9yKqQA66glH6BWjk/DEuyE4ErQ==
   dependencies:
     "@types/readline-sync" "^1.4.4"
-    ethers "^5.4.7"
     readline-sync "^1.4.10"
 
 hardhat@^2.4.3:
@@ -21080,6 +21079,7 @@ socks@~2.3.2:
     smart-buffer "^4.1.0"
 
 "solc-0.6.12@npm:solc@0.6.12", solc@^0.6.3, solc@^0.6.7:
+  name solc-0.6.12
   version "0.6.12"
   resolved "https://registry.yarnpkg.com/solc/-/solc-0.6.12.tgz#48ac854e0c729361b22a7483645077f58cba080e"
   integrity sha512-Lm0Ql2G9Qc7yPP2Ba+WNmzw2jwsrd3u4PobHYlSOxaut3TtUbj9+5ZrT6f4DUpNPEoBaFUOEg9Op9C0mk7ge9g==
