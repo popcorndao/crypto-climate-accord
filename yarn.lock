@@ -3583,7 +3583,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@nomiclabs/hardhat-ethers@^2.0.1":
+"@nomiclabs/hardhat-ethers@^2.0.2":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@nomiclabs/hardhat-ethers/-/hardhat-ethers-2.0.2.tgz#c472abcba0c5185aaa4ad4070146e95213c68511"
   integrity sha512-6quxWe8wwS4X5v3Au8q1jOvXYEPkS1Fh+cME5u6AwNdnI4uERvPlVjlgRWzpnb+Rrt1l/cEqiNRH9GlsBMSDQg==
@@ -13108,13 +13108,12 @@ hardhat-gas-reporter@^1.0.4:
     eth-gas-reporter "^0.2.20"
     sha1 "^1.1.1"
 
-hardhat-secure-signer@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/hardhat-secure-signer/-/hardhat-secure-signer-0.0.6.tgz#330d95a85361c0c59ba065c35a6037ad4253de8e"
-  integrity sha512-G/9x1oexHmrMV59WkUTO+1y8KOdi5BYCra06qEj4QJS9cmGeZAKDwV1EUu72OuPbl3+t2t/xTWD01eo9pRezWw==
+hardhat-secure-signer@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/hardhat-secure-signer/-/hardhat-secure-signer-0.0.8.tgz#93eebe2dce166be48617746db56b2e3b43c35f97"
+  integrity sha512-62OMjh1wTwdjOWRToEMVvuyX0Uk1zBMGVOadWZFbpeBGIa5rYqFyXPP4sdtI9yKqQA66glH6BWjk/DEuyE4ErQ==
   dependencies:
     "@types/readline-sync" "^1.4.4"
-    ethers "^5.4.7"
     readline-sync "^1.4.10"
 
 hardhat@^2.4.3:
