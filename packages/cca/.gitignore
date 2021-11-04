@@ -1,0 +1,15 @@
+.env
+cache/
+typechain
+coverage/
+coverage.json
+
+docgen/docs
+docgen/SUMMARY.md
+docgen/.gitbook.yaml
+
+artifacts/
+artifacts-ovm/
+cache/
+cache-ovm/
+typechain/
