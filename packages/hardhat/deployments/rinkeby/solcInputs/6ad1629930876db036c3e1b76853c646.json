@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/cca/CryptoClimateAccord.sol": {
+      "content": "// SPDX-License-Identifier: UNLICENSED\n// author: Popcorn (https://popcorn.network)\n\npragma solidity ^0.8.0;\n\n/**\n * @title Crypto Climate Accord on-chain Agreement provided by Popcorn.Network\n * @notice by calling `acceptCryptoClimateAccordAgreement()` function in this contract, `msg.sender` is committing to the terms of the following:\n *  Signing this transaction represents a public commitment to support the overall and interim objectives of the Crypto Climate Accord, as follows:\n *  The Crypto Climate Accord’s overall objective is to decarbonize the global crypto industry by prioritizing climate stewardship and supporting the entire crypto industry’s transition to net zero greenhouse gas emissions by 2040. The Accord has two specific interim objectives:\n *\n *  Objective 1: Achieve net-zero emissions from electricity consumption for CCA Signatories by 2030.\n *  Objective 2: Develop standards, tools, and technologies with CCA Supporters to accelerate the adoption of and verify progress toward 100% renewably-powered blockchains by the 2025 UNFCCC COP30 conference.\n *\n *  Moreover, by signing this transaction, the Signatory, affirms its public commitment to achieve net-zero emissions\n *  from electricity consumption associated with all of its crypto-related operations and to report progress toward this net-zero emissions target using best industry practices.\n *\n *  By signing and submitting this transaction, Signatory permits full public recognition (including the use of Signatory’s logo and references in public communications) and responsibilities of this commitment.\n *  Please submit the transaction hash via email to the Crypto Climate Accord to formalize this commitment and put this commitment on record. If Signatory decides to withdraw its commitment, then Signatory must submit its withdrawal in writing to Energy Web to formalize its withdrawal as a Signatory.\n */\ncontract CryptoClimateAccord {\n  /**\n   * Each signatory will provide an IPFS cid with the following metadata in a valid JSON format\n   * \n   {\n    organizationName: string;\n    address: string;\n    logo: string;\n   }\n   */\n  mapping(address => bytes32) public metadata;\n\n  /**\n   *\n   */\n  mapping(address => bool) public signatories;\n\n  /**\n   * @notice by submitting this transaction, `msg.sender` is committing to the terms of the following:\n   *  Signing this transaction represents a public commitment to support the overall and interim objectives of the Crypto Climate Accord, as follows:\n   *  The Crypto Climate Accord’s overall objective is to decarbonize the global crypto industry by prioritizing climate stewardship and supporting the entire crypto industry’s transition to net zero greenhouse gas emissions by 2040. The Accord has two specific interim objectives:\n   *\n   *  Objective 1: Achieve net-zero emissions from electricity consumption for CCA Signatories by 2030.\n   *  Objective 2: Develop standards, tools, and technologies with CCA Supporters to accelerate the adoption of and verify progress toward 100% renewably-powered blockchains by the 2025 UNFCCC COP30 conference.\n   *\n   *  Moreover, by signing this transaction, the Signatory, affirms its public commitment to achieve net-zero emissions\n   *  from electricity consumption associated with all of its crypto-related operations and to report progress toward this net-zero emissions target using best industry practices.\n   *  By signing and submitting this transaction, Signatory permits full public recognition (including the use of Signatory’s logo and references in public communications) and responsibilities of this commitment.\n   *  Please submit the transaction hash via email to the Crypto Climate Accord to formalize this commitment and put this commitment on record. If Signatory decides to withdraw its commitment, then Signatory must submit its withdrawal in writing to Energy Web to formalize its withdrawal as a Signatory.\n   *\n   */\n  function acceptCryptoClimateAccordAgreement(bytes32 _metadata, bool _acceptTerms) external {\n    require(_metadata != \"\", \"Metadata submitted should not be empty\");\n    signatories[msg.sender] = _acceptTerms;\n    metadata[msg.sender] = _metadata;\n  }\n\n  /**\n   * @notice by submitting this transaction, `msg.sender` is withdrawing their commitment to the Crypto Climate Accord\n   */\n  function withdrawFromCryptoClimateAccordAgreement() external {\n    require(signatories[msg.sender], \"Must be a signatory to withdraw from Crypto Climate Accord\");\n    signatories[msg.sender] = false;\n  }\n\n  /**\n   * @notice check whether address is a signatory\n   */\n  function isASignatory(address _address) external view returns (bool) {\n    return signatories[_address];\n  }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 1000
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

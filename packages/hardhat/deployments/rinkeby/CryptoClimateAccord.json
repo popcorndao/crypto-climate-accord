@@ -1,0 +1,335 @@
+{
+  "address": "0xd8Ef6Bc817f4878707a66abb3CF10b750d562698",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        }
+      ],
+      "name": "SignatoryAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        }
+      ],
+      "name": "SignatoryRemoved",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_metadata",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bool",
+          "name": "_acceptTerms",
+          "type": "bool"
+        }
+      ],
+      "name": "acceptCryptoClimateAccordAgreement",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getSignatories",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        }
+      ],
+      "name": "getSignatoryMetadata",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        }
+      ],
+      "name": "isASignatory",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "metadata",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "signatories",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "acceptedTerms",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "withdrawn",
+          "type": "bool"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "metadata",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "signatoriesList",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "withdrawFromCryptoClimateAccordAgreement",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x9817473d0d0469033301146f59073360b14c15223ddd6d59eec0cfbd6f2d3abb",
+  "receipt": {
+    "to": null,
+    "from": "0x4a7a11D12805A7570bD1CB65E1Ca1396a0B1aF6F",
+    "contractAddress": "0xd8Ef6Bc817f4878707a66abb3CF10b750d562698",
+    "transactionIndex": 9,
+    "gasUsed": "489423",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x0c508b095528016079499829bf640802d32189778d238ce4624a7110d21a1555",
+    "transactionHash": "0x9817473d0d0469033301146f59073360b14c15223ddd6d59eec0cfbd6f2d3abb",
+    "logs": [],
+    "blockNumber": 9584443,
+    "cumulativeGasUsed": "1129573",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "0ac86527fed1e890f8986774ac3abbb3",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"SignatoryAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"SignatoryRemoved\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_metadata\",\"type\":\"bytes32\"},{\"internalType\":\"bool\",\"name\":\"_acceptTerms\",\"type\":\"bool\"}],\"name\":\"acceptCryptoClimateAccordAgreement\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getSignatories\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"getSignatoryMetadata\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"isASignatory\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"metadata\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"signatories\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"acceptedTerms\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"withdrawn\",\"type\":\"bool\"},{\"internalType\":\"bytes32\",\"name\":\"metadata\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"signatoriesList\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"withdrawFromCryptoClimateAccordAgreement\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"title\":\"Crypto Climate Accord on-chain Agreement provided by Popcorn.Network\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"acceptCryptoClimateAccordAgreement(bytes32,bool)\":{\"notice\":\"by submitting this transaction, `msg.sender` is committing to the terms of the following:  Signing this transaction represents a public commitment to support the overall and interim objectives of the Crypto Climate Accord, as follows:  The Crypto Climate Accord\\u2019s overall objective is to decarbonize the global crypto industry by prioritizing climate stewardship and supporting the entire crypto industry\\u2019s transition to net zero greenhouse gas emissions by 2040. The Accord has two specific interim objectives:  Objective 1: Achieve net-zero emissions from electricity consumption for CCA Signatories by 2030.  Objective 2: Develop standards, tools, and technologies with CCA Supporters to accelerate the adoption of and verify progress toward 100% renewably-powered blockchains by the 2025 UNFCCC COP30 conference.  Moreover, by signing this transaction, the Signatory, affirms its public commitment to achieve net-zero emissions  from electricity consumption associated with all of its crypto-related operations and to report progress toward this net-zero emissions target using best industry practices.  By signing and submitting this transaction, Signatory permits full public recognition (including the use of Signatory\\u2019s logo and references in public communications) and responsibilities of this commitment.  Please submit the transaction hash via email to the Crypto Climate Accord to formalize this commitment and put this commitment on record. If Signatory decides to withdraw its commitment, then Signatory must submit its withdrawal in writing to Energy Web to formalize its withdrawal as a Signatory.\"},\"getSignatories()\":{\"notice\":\"Returns list of signatories. Entries need to be validated against `isASignatory()` in case signatory has withdrawn from agreement\"},\"getSignatoryMetadata(address)\":{\"notice\":\"retrieve bytes32 encoded IPFS cid for signatory metadata\"},\"isASignatory(address)\":{\"notice\":\"check whether address is a signatory\"},\"signatories(address)\":{\"notice\":\"mapping of signatories and their acceptance of terms\"},\"withdrawFromCryptoClimateAccordAgreement()\":{\"notice\":\"by submitting this transaction, `msg.sender` is withdrawing their commitment to the Crypto Climate Accord\"}},\"notice\":\"by calling `acceptCryptoClimateAccordAgreement()` function in this contract, `msg.sender` is committing to the terms of the following:  Signing this transaction represents a public commitment to support the overall and interim objectives of the Crypto Climate Accord, as follows:  The Crypto Climate Accord\\u2019s overall objective is to decarbonize the global crypto industry by prioritizing climate stewardship and supporting the entire crypto industry\\u2019s transition to net zero greenhouse gas emissions by 2040. The Accord has two specific interim objectives:  Objective 1: Achieve net-zero emissions from electricity consumption for CCA Signatories by 2030.  Objective 2: Develop standards, tools, and technologies with CCA Supporters to accelerate the adoption of and verify progress toward 100% renewably-powered blockchains by the 2025 UNFCCC COP30 conference.  Moreover, by signing this transaction, the Signatory, affirms its public commitment to achieve net-zero emissions  from electricity consumption associated with all of its crypto-related operations and to report progress toward this net-zero emissions target using best industry practices.  By signing and submitting this transaction, Signatory permits full public recognition (including the use of Signatory\\u2019s logo and references in public communications) and responsibilities of this commitment.  Please submit the transaction hash via email to the Crypto Climate Accord to formalize this commitment and put this commitment on record. If Signatory decides to withdraw its commitment, then Signatory must submit its withdrawal in writing to Energy Web to formalize its withdrawal as a Signatory.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/cca/CryptoClimateAccord.sol\":\"CryptoClimateAccord\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1000},\"remappings\":[]},\"sources\":{\"contracts/cca/CryptoClimateAccord.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n// author: Popcorn (https://popcorn.network)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @title Crypto Climate Accord on-chain Agreement provided by Popcorn.Network\\n * @notice by calling `acceptCryptoClimateAccordAgreement()` function in this contract, `msg.sender` is committing to the terms of the following:\\n *  Signing this transaction represents a public commitment to support the overall and interim objectives of the Crypto Climate Accord, as follows:\\n *  The Crypto Climate Accord\\u2019s overall objective is to decarbonize the global crypto industry by prioritizing climate stewardship and supporting the entire crypto industry\\u2019s transition to net zero greenhouse gas emissions by 2040. The Accord has two specific interim objectives:\\n *\\n *  Objective 1: Achieve net-zero emissions from electricity consumption for CCA Signatories by 2030.\\n *  Objective 2: Develop standards, tools, and technologies with CCA Supporters to accelerate the adoption of and verify progress toward 100% renewably-powered blockchains by the 2025 UNFCCC COP30 conference.\\n *\\n *  Moreover, by signing this transaction, the Signatory, affirms its public commitment to achieve net-zero emissions\\n *  from electricity consumption associated with all of its crypto-related operations and to report progress toward this net-zero emissions target using best industry practices.\\n *\\n *  By signing and submitting this transaction, Signatory permits full public recognition (including the use of Signatory\\u2019s logo and references in public communications) and responsibilities of this commitment.\\n *  Please submit the transaction hash via email to the Crypto Climate Accord to formalize this commitment and put this commitment on record. If Signatory decides to withdraw its commitment, then Signatory must submit its withdrawal in writing to Energy Web to formalize its withdrawal as a Signatory.\\n */\\ncontract CryptoClimateAccord {\\n  mapping(address => bytes32) public metadata;\\n\\n  /**\\n   * @param account address of signatory\\n   * @param acceptedTerms signatory accepts terms\\n   * @param withdrawn signatory withdrawn from CryptoClimateAccord\\n   * @param metadata Each signatory will provide an IPFS cid with the following metadata in a valid JSON format below:\\n   * \\n    {\\n      organizationName: string;\\n      address: string;\\n      logo: string;\\n    }\\n   *\\n   */\\n  struct Signatory {\\n    address account;\\n    bool acceptedTerms;\\n    bool withdrawn;\\n    bytes32 metadata;\\n  }\\n\\n  /**\\n   * @notice mapping of signatories and their acceptance of terms\\n   */\\n  mapping(address => Signatory) public signatories;\\n\\n  address[] public signatoriesList;\\n\\n  event SignatoryAdded(address _address);\\n  event SignatoryRemoved(address _address);\\n\\n  /**\\n   * @notice by submitting this transaction, `msg.sender` is committing to the terms of the following:\\n   *  Signing this transaction represents a public commitment to support the overall and interim objectives of the Crypto Climate Accord, as follows:\\n   *  The Crypto Climate Accord\\u2019s overall objective is to decarbonize the global crypto industry by prioritizing climate stewardship and supporting the entire crypto industry\\u2019s transition to net zero greenhouse gas emissions by 2040. The Accord has two specific interim objectives:\\n   *\\n   *  Objective 1: Achieve net-zero emissions from electricity consumption for CCA Signatories by 2030.\\n   *  Objective 2: Develop standards, tools, and technologies with CCA Supporters to accelerate the adoption of and verify progress toward 100% renewably-powered blockchains by the 2025 UNFCCC COP30 conference.\\n   *\\n   *  Moreover, by signing this transaction, the Signatory, affirms its public commitment to achieve net-zero emissions\\n   *  from electricity consumption associated with all of its crypto-related operations and to report progress toward this net-zero emissions target using best industry practices.\\n   *  By signing and submitting this transaction, Signatory permits full public recognition (including the use of Signatory\\u2019s logo and references in public communications) and responsibilities of this commitment.\\n   *  Please submit the transaction hash via email to the Crypto Climate Accord to formalize this commitment and put this commitment on record. If Signatory decides to withdraw its commitment, then Signatory must submit its withdrawal in writing to Energy Web to formalize its withdrawal as a Signatory.\\n   *\\n   */\\n  function acceptCryptoClimateAccordAgreement(bytes32 _metadata, bool _acceptTerms) external {\\n    require(_metadata != \\\"\\\", \\\"Metadata submitted should not be empty\\\");\\n    require(!signatories[msg.sender].acceptedTerms, \\\"Signatory already exists\\\");\\n    require(_acceptTerms == true, \\\"Signatory must accept terms of agreement\\\");\\n\\n    signatories[msg.sender] = Signatory({\\n      account: msg.sender,\\n      acceptedTerms: _acceptTerms,\\n      withdrawn: false,\\n      metadata: _metadata\\n    });\\n\\n    signatoriesList.push(msg.sender);\\n    emit SignatoryAdded(msg.sender);\\n  }\\n\\n  /**\\n   * @notice by submitting this transaction, `msg.sender` is withdrawing their commitment to the Crypto Climate Accord\\n   */\\n  function withdrawFromCryptoClimateAccordAgreement() external {\\n    require(signatories[msg.sender].acceptedTerms, \\\"Must be a signatory to withdraw from Crypto Climate Accord\\\");\\n    signatories[msg.sender].withdrawn = true;\\n    signatories[msg.sender].acceptedTerms = false;\\n    emit SignatoryRemoved(msg.sender);\\n  }\\n\\n  /**\\n   * @notice check whether address is a signatory\\n   */\\n  function isASignatory(address _address) external view returns (bool) {\\n    return signatories[_address].acceptedTerms && !signatories[_address].withdrawn;\\n  }\\n\\n  /**\\n   * @notice retrieve bytes32 encoded IPFS cid for signatory metadata\\n   */\\n  function getSignatoryMetadata(address _address) external view returns (bytes32) {\\n    require(signatories[_address].acceptedTerms, \\\"Address is not a signatory\\\");\\n    return signatories[_address].metadata;\\n  }\\n\\n  /**\\n   * @notice Returns list of signatories. Entries need to be validated against `isASignatory()` in case signatory has withdrawn from agreement\\n   */\\n  function getSignatories() external view returns (address[] memory) {\\n    return signatoriesList;\\n  }\\n}\\n\",\"keccak256\":\"0x19280a85e0c331a6c9153f0cdea037106e2a7655d3436789e2d39092a6ed6d3f\",\"license\":\"UNLICENSED\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506107e8806100206000396000f3fe608060405234801561001057600080fd5b50600436106100885760003560e01c806394042b6b1161005b57806394042b6b146100f8578063b16ae3cc14610118578063c4e499f71461012b578063fbdaf6ee1461014b57610088565b806315c8d6e01461008d5780632ba21572146100975780637932f372146100c0578063906685b5146100e3575b600080fd5b61009561015e565b005b6100aa6100a5366004610517565b6101fe565b6040516100b79190610624565b60405180910390f35b6100d36100ce366004610517565b610210565b6040516100b794939291906105a4565b6100eb61024a565b6040516100b791906105cc565b61010b610106366004610578565b6102ac565b6040516100b79190610590565b6100aa610126366004610517565b6102d6565b61013e610139366004610517565b610335565b6040516100b79190610619565b610095610159366004610545565b61038a565b33600090815260016020526040902054600160a01b900460ff1661019d5760405162461bcd60e51b81526004016101949061062d565b60405180910390fd5b3360008181526001602052604090819020805460ff60a01b1960ff60a81b19909116600160a81b17169055517f854bd90657c9840469c248f50889c6cb638355a3363d3c8bd8dd3048c5751eb3916101f491610590565b60405180910390a1565b60006020819052908152604090205481565b600160208190526000918252604090912080549101546001600160a01b0382169160ff600160a01b8204811692600160a81b909204169084565b606060028054806020026020016040519081016040528092919081815260200182805480156102a257602002820191906000526020600020905b81546001600160a01b03168152600190910190602001808311610284575b5050505050905090565b600281815481106102bc57600080fd5b6000918252602090912001546001600160a01b0316905081565b6001600160a01b038116600090815260016020526040812054600160a01b900460ff166103155760405162461bcd60e51b81526004016101949061068a565b506001600160a01b03166000908152600160208190526040909120015490565b6001600160a01b038116600090815260016020526040812054600160a01b900460ff16801561038457506001600160a01b038216600090815260016020526040902054600160a81b900460ff16155b92915050565b816103a75760405162461bcd60e51b815260040161019490610755565b33600090815260016020526040902054600160a01b900460ff16156103de5760405162461bcd60e51b8152600401610194906106c1565b6001811515146104005760405162461bcd60e51b8152600401610194906106f8565b6040805160808101825233808252831515602080840191825260008486018181526060860189815285835260019384905287832096518754955192511515600160a81b0260ff60a81b19931515600160a01b0260ff60a01b196001600160a01b03939093167fffffffffffffffffffffffff00000000000000000000000000000000000000009889161792909216919091179290921691909117865551948201949094556002805491820181559093527f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace9092018054909216811790915590517f35e9f4e035b3b6d11ab65f031cdf634b53e98c81266f5dcb19ffa652533509f29161050b91610590565b60405180910390a15050565b600060208284031215610528578081fd5b81356001600160a01b038116811461053e578182fd5b9392505050565b60008060408385031215610557578081fd5b823591506020830135801515811461056d578182fd5b809150509250929050565b600060208284031215610589578081fd5b5035919050565b6001600160a01b0391909116815260200190565b6001600160a01b03949094168452911515602084015215156040830152606082015260800190565b6020808252825182820181905260009190848201906040850190845b8181101561060d5783516001600160a01b0316835292840192918401916001016105e8565b50909695505050505050565b901515815260200190565b90815260200190565b6020808252603a908201527f4d7573742062652061207369676e61746f727920746f2077697468647261772060408201527f66726f6d2043727970746f20436c696d617465204163636f7264000000000000606082015260800190565b6020808252601a908201527f41646472657373206973206e6f742061207369676e61746f7279000000000000604082015260600190565b60208082526018908201527f5369676e61746f727920616c7265616479206578697374730000000000000000604082015260600190565b60208082526028908201527f5369676e61746f7279206d75737420616363657074207465726d73206f66206160408201527f677265656d656e74000000000000000000000000000000000000000000000000606082015260800190565b60208082526026908201527f4d65746164617461207375626d69747465642073686f756c64206e6f7420626560408201527f20656d707479000000000000000000000000000000000000000000000000000060608201526080019056fea2646970667358221220a7882d2b8f7756f25173e97bf706e9ea6ff71d740bf5fab8a928159ed2c67d9464736f6c63430008000033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100885760003560e01c806394042b6b1161005b57806394042b6b146100f8578063b16ae3cc14610118578063c4e499f71461012b578063fbdaf6ee1461014b57610088565b806315c8d6e01461008d5780632ba21572146100975780637932f372146100c0578063906685b5146100e3575b600080fd5b61009561015e565b005b6100aa6100a5366004610517565b6101fe565b6040516100b79190610624565b60405180910390f35b6100d36100ce366004610517565b610210565b6040516100b794939291906105a4565b6100eb61024a565b6040516100b791906105cc565b61010b610106366004610578565b6102ac565b6040516100b79190610590565b6100aa610126366004610517565b6102d6565b61013e610139366004610517565b610335565b6040516100b79190610619565b610095610159366004610545565b61038a565b33600090815260016020526040902054600160a01b900460ff1661019d5760405162461bcd60e51b81526004016101949061062d565b60405180910390fd5b3360008181526001602052604090819020805460ff60a01b1960ff60a81b19909116600160a81b17169055517f854bd90657c9840469c248f50889c6cb638355a3363d3c8bd8dd3048c5751eb3916101f491610590565b60405180910390a1565b60006020819052908152604090205481565b600160208190526000918252604090912080549101546001600160a01b0382169160ff600160a01b8204811692600160a81b909204169084565b606060028054806020026020016040519081016040528092919081815260200182805480156102a257602002820191906000526020600020905b81546001600160a01b03168152600190910190602001808311610284575b5050505050905090565b600281815481106102bc57600080fd5b6000918252602090912001546001600160a01b0316905081565b6001600160a01b038116600090815260016020526040812054600160a01b900460ff166103155760405162461bcd60e51b81526004016101949061068a565b506001600160a01b03166000908152600160208190526040909120015490565b6001600160a01b038116600090815260016020526040812054600160a01b900460ff16801561038457506001600160a01b038216600090815260016020526040902054600160a81b900460ff16155b92915050565b816103a75760405162461bcd60e51b815260040161019490610755565b33600090815260016020526040902054600160a01b900460ff16156103de5760405162461bcd60e51b8152600401610194906106c1565b6001811515146104005760405162461bcd60e51b8152600401610194906106f8565b6040805160808101825233808252831515602080840191825260008486018181526060860189815285835260019384905287832096518754955192511515600160a81b0260ff60a81b19931515600160a01b0260ff60a01b196001600160a01b03939093167fffffffffffffffffffffffff00000000000000000000000000000000000000009889161792909216919091179290921691909117865551948201949094556002805491820181559093527f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace9092018054909216811790915590517f35e9f4e035b3b6d11ab65f031cdf634b53e98c81266f5dcb19ffa652533509f29161050b91610590565b60405180910390a15050565b600060208284031215610528578081fd5b81356001600160a01b038116811461053e578182fd5b9392505050565b60008060408385031215610557578081fd5b823591506020830135801515811461056d578182fd5b809150509250929050565b600060208284031215610589578081fd5b5035919050565b6001600160a01b0391909116815260200190565b6001600160a01b03949094168452911515602084015215156040830152606082015260800190565b6020808252825182820181905260009190848201906040850190845b8181101561060d5783516001600160a01b0316835292840192918401916001016105e8565b50909695505050505050565b901515815260200190565b90815260200190565b6020808252603a908201527f4d7573742062652061207369676e61746f727920746f2077697468647261772060408201527f66726f6d2043727970746f20436c696d617465204163636f7264000000000000606082015260800190565b6020808252601a908201527f41646472657373206973206e6f742061207369676e61746f7279000000000000604082015260600190565b60208082526018908201527f5369676e61746f727920616c7265616479206578697374730000000000000000604082015260600190565b60208082526028908201527f5369676e61746f7279206d75737420616363657074207465726d73206f66206160408201527f677265656d656e74000000000000000000000000000000000000000000000000606082015260800190565b60208082526026908201527f4d65746164617461207375626d69747465642073686f756c64206e6f7420626560408201527f20656d707479000000000000000000000000000000000000000000000000000060608201526080019056fea2646970667358221220a7882d2b8f7756f25173e97bf706e9ea6ff71d740bf5fab8a928159ed2c67d9464736f6c63430008000033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "title": "Crypto Climate Accord on-chain Agreement provided by Popcorn.Network",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "acceptCryptoClimateAccordAgreement(bytes32,bool)": {
+        "notice": "by submitting this transaction, `msg.sender` is committing to the terms of the following:  Signing this transaction represents a public commitment to support the overall and interim objectives of the Crypto Climate Accord, as follows:  The Crypto Climate Accord’s overall objective is to decarbonize the global crypto industry by prioritizing climate stewardship and supporting the entire crypto industry’s transition to net zero greenhouse gas emissions by 2040. The Accord has two specific interim objectives:  Objective 1: Achieve net-zero emissions from electricity consumption for CCA Signatories by 2030.  Objective 2: Develop standards, tools, and technologies with CCA Supporters to accelerate the adoption of and verify progress toward 100% renewably-powered blockchains by the 2025 UNFCCC COP30 conference.  Moreover, by signing this transaction, the Signatory, affirms its public commitment to achieve net-zero emissions  from electricity consumption associated with all of its crypto-related operations and to report progress toward this net-zero emissions target using best industry practices.  By signing and submitting this transaction, Signatory permits full public recognition (including the use of Signatory’s logo and references in public communications) and responsibilities of this commitment.  Please submit the transaction hash via email to the Crypto Climate Accord to formalize this commitment and put this commitment on record. If Signatory decides to withdraw its commitment, then Signatory must submit its withdrawal in writing to Energy Web to formalize its withdrawal as a Signatory."
+      },
+      "getSignatories()": {
+        "notice": "Returns list of signatories. Entries need to be validated against `isASignatory()` in case signatory has withdrawn from agreement"
+      },
+      "getSignatoryMetadata(address)": {
+        "notice": "retrieve bytes32 encoded IPFS cid for signatory metadata"
+      },
+      "isASignatory(address)": {
+        "notice": "check whether address is a signatory"
+      },
+      "signatories(address)": {
+        "notice": "mapping of signatories and their acceptance of terms"
+      },
+      "withdrawFromCryptoClimateAccordAgreement()": {
+        "notice": "by submitting this transaction, `msg.sender` is withdrawing their commitment to the Crypto Climate Accord"
+      }
+    },
+    "notice": "by calling `acceptCryptoClimateAccordAgreement()` function in this contract, `msg.sender` is committing to the terms of the following:  Signing this transaction represents a public commitment to support the overall and interim objectives of the Crypto Climate Accord, as follows:  The Crypto Climate Accord’s overall objective is to decarbonize the global crypto industry by prioritizing climate stewardship and supporting the entire crypto industry’s transition to net zero greenhouse gas emissions by 2040. The Accord has two specific interim objectives:  Objective 1: Achieve net-zero emissions from electricity consumption for CCA Signatories by 2030.  Objective 2: Develop standards, tools, and technologies with CCA Supporters to accelerate the adoption of and verify progress toward 100% renewably-powered blockchains by the 2025 UNFCCC COP30 conference.  Moreover, by signing this transaction, the Signatory, affirms its public commitment to achieve net-zero emissions  from electricity consumption associated with all of its crypto-related operations and to report progress toward this net-zero emissions target using best industry practices.  By signing and submitting this transaction, Signatory permits full public recognition (including the use of Signatory’s logo and references in public communications) and responsibilities of this commitment.  Please submit the transaction hash via email to the Crypto Climate Accord to formalize this commitment and put this commitment on record. If Signatory decides to withdraw its commitment, then Signatory must submit its withdrawal in writing to Energy Web to formalize its withdrawal as a Signatory.",
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 6,
+        "contract": "contracts/cca/CryptoClimateAccord.sol:CryptoClimateAccord",
+        "label": "metadata",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_address,t_bytes32)"
+      },
+      {
+        "astId": 21,
+        "contract": "contracts/cca/CryptoClimateAccord.sol:CryptoClimateAccord",
+        "label": "signatories",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_struct(Signatory)15_storage)"
+      },
+      {
+        "astId": 24,
+        "contract": "contracts/cca/CryptoClimateAccord.sol:CryptoClimateAccord",
+        "label": "signatoriesList",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_array(t_address)dyn_storage"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_address)dyn_storage": {
+        "base": "t_address",
+        "encoding": "dynamic_array",
+        "label": "address[]",
+        "numberOfBytes": "32"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_mapping(t_address,t_bytes32)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => bytes32)",
+        "numberOfBytes": "32",
+        "value": "t_bytes32"
+      },
+      "t_mapping(t_address,t_struct(Signatory)15_storage)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => struct CryptoClimateAccord.Signatory)",
+        "numberOfBytes": "32",
+        "value": "t_struct(Signatory)15_storage"
+      },
+      "t_struct(Signatory)15_storage": {
+        "encoding": "inplace",
+        "label": "struct CryptoClimateAccord.Signatory",
+        "members": [
+          {
+            "astId": 8,
+            "contract": "contracts/cca/CryptoClimateAccord.sol:CryptoClimateAccord",
+            "label": "account",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address"
+          },
+          {
+            "astId": 10,
+            "contract": "contracts/cca/CryptoClimateAccord.sol:CryptoClimateAccord",
+            "label": "acceptedTerms",
+            "offset": 20,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 12,
+            "contract": "contracts/cca/CryptoClimateAccord.sol:CryptoClimateAccord",
+            "label": "withdrawn",
+            "offset": 21,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 14,
+            "contract": "contracts/cca/CryptoClimateAccord.sol:CryptoClimateAccord",
+            "label": "metadata",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_bytes32"
+          }
+        ],
+        "numberOfBytes": "64"
+      }
+    }
+  }
+}
